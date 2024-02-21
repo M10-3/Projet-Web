@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>BIENVENU - Salon de coiffure</title>
+    </head>
+
+    <body>
+        <header id="mainHeader">
+            <div>
+                <a href="accueil.html"> Home</a>
+                <a href="#"> Projets et Tâches</a>
+                <a href="#"> Liste employés</a>
+                <a href="inscription.html"> Inscription</a>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <img
+                src="img1.png"
+                alt="salle"
+                width="100%"
+                height="500px"
+            />
+        </header>
+        <br /><br />
+        <hr />
+        <br /><br />
+        <section id="pageContent">
+            <h1 align="center">Bienvenu sur notre site</h1>
+            <p align="center">
+                Nous proposons une gestion de tâches et de projets dans votre entreprise
+            </p>
+
+            <h1 align="center">Nos Valeurs</h1>
+            <table>
+                <tr>
+                    <th>
+                        <img
+                            src="img2.png"
+                            alt="salle"
+                            width="60%"
+                            height="30%"
+                        />
+                    </th>
+                    <th>
+                        <img
+                            src="img3.png"
+                            alt="salle"
+                            width="60%"
+                            height="60%"
+                        />
+                    </th>
+                    <th>
+                        <img
+                            src="img4.jpg"
+                            alt="salle"
+                            width="60%"
+                            height="30%"
+                        />
+                    </th>
+                </tr>
+                <tr>
+                    <td align="center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                    </td>
+                    <td align="center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                    </td>
+                    <td align="center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br />
+        <hr />
+        <br />
+
+        <footer>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <p>Vous pouvez nous contacter par mail :
+                            <a href="mailto:esprit@esprit.tn"
+                        > esprit@esprit.tn
+                        </a>
+                        </p>
+                        <p>Adresse : Ghazela, Tunis</p>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
+
+
+
+///////////////////////////////////////////////////////INSCRIPTION//////////////////////////////////////////////////////////////
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Salon de coiffure</title>
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div>
+            <a href="accueil.html"> Home </a>
+            <a href="#"> Projets et Tâches</a>
+            <a href="#"> Liste employés</a>
+            <a href="inscription.html"> Inscription </a>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <img src="img1.png" alt="salle" width="100%" height="500px" />
+    </header>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <section id="pageContent">
+        <h3>Inscription</h3>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">Nom <span>*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{2,}" title="Veuillez entrer un nom valide (lettres uniquement)" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Prenom <span>*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{2,}" title="Veuillez entrer un prénom valide (lettres uniquement)" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email <span>*</span> </label></td>
+                    <td>
+                        <input type="email" id="email" name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Téléphone <span>*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="phone" name="phone" pattern="[0-9]{8}"
+                            title="Veuillez entrer un numéro de téléphone valide (8 chiffres)"
+                            required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date de Naissance <span>*</span> </label></td>
+                    <td>
+                        <input type="date" id="dateNaissance" name="dob" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mot de passe <span>*</span></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins 8 caractères, incluant au moins un chiffre, une lettre minuscule et une lettre majuscule."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="S'inscrire" onclick="validerDateOfBirth()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+    <footer>
+        <table width="100%">
+            <tr>
+                <td>
+                    <p>Vous pouvez nous contacter par mail :
+                        <a href="mailto:esprit@esprit.tn"> esprit@esprit.tn
+                        </a>
+                    </p>
+                    <p>Adresse : Ghazela, Tunis</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
+
+
+
+/////////////////////////////////////////////////////////////////////JAVA/////////////////////////////////////////////////////////
+
+
+function validerDateOfBirth() {
+    var dateNaissance = document.getElementById("dateNaissance").value;
+    var today = new Date();
+    var selectedDate = new Date(dateNaissance);
+
+    if (selectedDate >= today) {
+        alert("La date de naissance doit être superieure à la date d'aujourd'hui.");
+        return false;
+    }
+
+    return true; 
+}
