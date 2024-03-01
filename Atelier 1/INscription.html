@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <title>INSCRIPTION</title>
-    <script src="java.js"></script>
 </head>
 
 <body>
@@ -31,6 +30,11 @@
                         <input type="text" id="name" name="name" required pattern="[A-Za-z]{2,}"
                             title="Veuillez entrer un nom valide(Lettre uniquement)">
                     </td>
+                    <td >
+            
+                        <p style="color: red" id="nomEr"></p>
+                      
+                      </td>
                 </tr>
                 <tr>
                     <td>
@@ -40,6 +44,11 @@
                         <input type="text" id="prename" name="prename" required pattern="[A-Za-z]{2,}"
                             title="Veuillez entrer un nom valide(Lettre uniquement)">
                     </td>
+                    <td >
+            
+                        <p style="color: red" id="prenomEr"></p>
+                      
+                      </td>
                 </tr>
                 <tr>
                     <td>
@@ -57,6 +66,11 @@
                         <input type="tel" id="phone" name="phone" required pattern="[0-9]{8}"
                             title="Veuillez entrer un numero valide(8 chiffres)">
                     </td>
+                    <td >
+            
+                        <p style="color: red" id="phoneEr"></p>
+                      
+                      </td>
                 </tr>
                 <tr>
                     <td>
@@ -65,6 +79,11 @@
                     <td>
                         <input type="date" name="dateNaissance" id="dateNaissance" required>
                     </td>
+                    <td >
+            
+                        <p style="color: red" id="datEr"></p>
+                      
+                      </td>
                 </tr>
                 <tr>
                     <td>
@@ -75,6 +94,11 @@
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Le mot de passe doit contenir au moins 8 caractères, incluant au moins un chiffre, une lettre minuscule et une lettre majuscule.">
                     </td>
+                    <td >
+            
+                        <p style="color: red" id="passEr"></p>
+                      
+                      </td>
                 </tr>
                 <tr>
                     <td>
@@ -85,46 +109,13 @@
         </form>
     </section>
 
-    <script>
-        document.addEventListener('submit', function (e) {
-            e.preventDefault();
-            var form = document.getElementById('pageContent');
-            var nom = document.getElementById('name');
-            var prenom = document.getElementById('prename');
-            var email = document.getElementById('mail');
-            var tel = document.getElementById('phone');
-            var naissance = document.getElementById('dateNaissance');
-
-            var validation = true;
-
-            function voirErreur(input, message) {
-                var error = document.createElement('span');
-                error.innerText = message;
-                error.style.color = 'red';
-                input.parentNode.appendChild(error);
-                validation = false;
-            }
-
-            function initErreur(input) {
-                var error = input.parentNode.querySelector('span');
-                if (error) {
-                    error.parentNode.removeChild(error);
-                }
-            }
-
-            if(validation === true)
-            {
-                form.submit();
-            }
-        });
-    </script>
-
     <br /><br />
     <hr />
     <footer>
         <p>Vous pouvez nous contacter par email : <a href='mailto:esprit@esprit.tn'>contact@esprit.tn</a></p>
         <p>Adresse: GHazela, Tunis</p>
     </footer>
+    <script src="java.js"></script>
 </body>
 
 </html>
